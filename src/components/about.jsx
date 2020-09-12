@@ -1,8 +1,7 @@
 import React from 'react';
-import { ImHtmlFive2 } from 'react-icons/im';
-
+import ExpCard from './ExpCard';
+import Paragraph from './Paragraph';
 const About=()=> {
- 
     return (
       <div>
         <section className="colorlib-about" data-section="about">
@@ -14,8 +13,7 @@ const About=()=> {
                     <div className="about-desc">
                     <span className="heading-meta">About Us</span>
                     <h2 className="colorlib-heading">Who Am I?</h2>
-                    <p>I am a computer grad student from DAIICT-Gandhinagar with ICT as my major.I love exploring new technologies and often amazed by the progress we as a human species have mad so far in the recent years (apart from the headphone-jack part!!)</p>
-                    <p>I have started reflecting my ideas and thougths through the medium of words recently so spelling and grammer mistaks are very often.You can write me back if you spot any and don't want to live anymore :P </p>
+                    <Paragraph/>
                     </div>
                 </div>
                 </div>
@@ -23,6 +21,7 @@ const About=()=> {
             </div>
         </div>
         </section>
+{/* --------------------------------- section -------------------------------- */}
         <section className="colorlib-about">
         <div className="colorlib-narrow-content">
             <div className="row">
@@ -32,80 +31,15 @@ const About=()=> {
             </div>
             </div>
             <div className="row row-pt-md">
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-1">
-                <span className="icon">
-                    <i className="icon-html-five" />
-              
-                </span>
-                <div className="desc">
-                    <h3>Web Development </h3>
-                    <p>I have experience building websites and chrome extentions using JavaScript,React,HTML,CSS</p>
-                </div>
-                </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-3">
-                <span className="icon">
-                    <i className="icon-phone3" />
-                </span>
-                <div className="desc">
-                    <h3>Data Structures & Algorithms</h3>
-                    <p>As coming from the CS background, I have good grasp over fundamental concepts of DSA</p>
-                </div>
-                </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-5">
-                <span className="icon">
-                    <i className="icon-data" />
-                </span>
-                <div className="desc">
-                    <h3>Dev Ops</h3>
-                    <p>I am pursuing my internship with DevOps team at Juniper and working with tools like Jenkins, Docker, K8s</p>
-                </div>
-                </div>
-            </div>
-            
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-2">
-                <span className="icon">
-                    <i className="icon-data" />
-                </span>
-                <div className="desc">
-                    <h3>Dev Ops</h3>
-                    <p>Jenkins , Kubernetes , Docker </p>
-                </div>
-                </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-4">
-                <span className="icon">
-                    <i className="icon-layers2" />
-                </span>
-                <div className="desc">
-                    <h3>Graphic Design</h3>
-                    <p>My friend knows .. P</p>
-                </div>
-                </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-6">
-                <span className="icon">
-                    <i className="icon-" />
-                </span>
-                <div className="desc">
-                    <h3>Digital Marketing</h3>
-                    <p>I use Instagram eight hours a day :) </p>
-                </div>
-                </div>
-            </div>
            
+           <ExpCard icon="icon-html-five" heading="Hello World" content="I know database"/>
+           <ExpCard icon="icon-data" heading="Hello World" content="I know database"/>
+           <ExpCard icon="icon-data" heading="Hello World" content="I know database"/>
+           <ExpCard icon="icon-data" heading="Hello World" content="I know database"/>
+
             </div>
         </div>
         </section>
       </div>
-
      ) };
-
      export default About;
