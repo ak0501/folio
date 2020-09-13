@@ -401,7 +401,7 @@ body.offcanvas {
 
 .author-img {
   background-size: cover;
-  background-position: 0rem 0rem;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
 

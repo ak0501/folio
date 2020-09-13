@@ -13,6 +13,8 @@ const Projects =() => {
 						</div>
 						<div className="row">
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+
+								
 								<div className="project" style={{backgroundImage: 'url(images/todo.png)'}}>
 									<div className="desc">
 										<div className="con">

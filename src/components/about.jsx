@@ -11,8 +11,8 @@ const About=()=> {
                 <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                 <div className="col-md-12">
                     <div className="about-desc">
-                    <span className="heading-meta">About Us</span>
-                    <h2 className="colorlib-heading">Who Am I?</h2>
+                    <span className="heading-meta"></span>
+                    <h2 className="colorlib-heading">Little About Me</h2>
                     <Paragraph/>
                     </div>
                 </div>
@@ -26,16 +26,14 @@ const About=()=> {
         <div className="colorlib-narrow-content">
             <div className="row">
             <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                <span className="heading-meta">What I do?</span>
-                <h2 className="colorlib-heading">Here are some of my expertise</h2>
+                <span className="heading-meta"></span>
+                <h2 className="colorlib-heading">Projects I worked On</h2>
             </div>
             </div>
             <div className="row row-pt-md">
            
-           <ExpCard icon="icon-html-five" heading="Hello World" content="I know database"/>
-           <ExpCard icon="icon-data" heading="Hello World" content="I know database"/>
-           <ExpCard icon="icon-data" heading="Hello World" content="I know database"/>
-           <ExpCard icon="icon-data" heading="Hello World" content="I know database"/>
+           <ExpCard />
+           
 
             </div>
         </div>

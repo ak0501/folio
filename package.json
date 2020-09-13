@@ -4,9 +4,13 @@
   "private": true,
   "homepage": "",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@mui-treasury/components": "^1.9.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-google-font-loader": "^1.1.0",
     "react-icons": "^3.11.0",
     "react-scripts": "2.1.5",
     "typeface-roboto": "0.0.75"
