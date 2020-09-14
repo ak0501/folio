@@ -1,5 +1,5 @@
 <h2> I am Abinash Khanal <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
-<p><em>Research & Development Engineer at <a href="https://tekclansolutions.com/">Tekclan</a></p>
+<p><em></p>
 
 
 
