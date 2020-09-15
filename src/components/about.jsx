@@ -3,7 +3,6 @@ import ExpCard from "./ExpCard";
 import Paragraph from "./Paragraph";
 import { Grid } from "@material-ui/core";
 import "./dish.png";
-
 const About = () => {
   return (
     <div>
@@ -36,11 +35,13 @@ const About = () => {
               data-animate-effect="fadeInLeft"
             >
               <span className="heading-meta"></span>
-              <h2 className="colorlib-heading">Projects I worked On</h2>
+              <h2 className="colorlib-heading">Projects</h2>
             </div>
           </div>
-
           <Grid
+            item
+            xs
+            zeroMinWidth
             container="container"
             direction="row"
             justify="space-evenly"
@@ -51,13 +52,15 @@ const About = () => {
                 title="lilOnes"
                 para="Child Care Management System"
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgw1YKZUW0mW3cXb9BgEw9X3t2A-ORDM7FfA&usqp=CAU"
+                link="https://github.com/ak0501/pequenoOnes"
               />
             </Grid>
             <Grid>
               <ExpCard
                 title="Planner"
                 para="Daily Planner to keep you on track"
-                image="https://image.freepik.com/free-icon/todo-list_318-10185.jpg"
+                image="https://www.clipartmax.com/png/middle/422-4223456_to-do-list-vector-todo-list-logos.png"
+                link="https://github.com/ak0501/React_FireBase_CRUD_TODO/settings"
               />
             </Grid>
             <Grid>
@@ -65,6 +68,7 @@ const About = () => {
                 title="CarbTracker"
                 para="Track Carbs in your meal"
                 image="https://www.seasonalcravings.com/wp-content/uploads/2018/03/instantpotporktacos2.jpg"
+                link="https://appcarbtracker.herokuapp.com/"
               />
             </Grid>
             <Grid>
@@ -72,6 +76,7 @@ const About = () => {
                 title="Weather"
                 para="Search Weather"
                 image="https://scx1.b-cdn.net/csz/news/800/2019/weatherforec.jpg"
+                link="https://ak0501.github.io/Weather-API/"
               />
             </Grid>
           </Grid>

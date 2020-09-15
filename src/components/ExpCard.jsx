@@ -18,23 +18,19 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({image,title,para}) {
+export default function MediaCard({ image, title, para,link }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={image}
-          title={image}
-        />
+        <CardMedia className={classes.media} image={image} title={image} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
           <Typography variant="body1 " color="textSecondary" component="p">
-           {para}
+            {para}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -43,7 +39,7 @@ export default function MediaCard({image,title,para}) {
           Share
         </Button> */}
         <Button size="medium" color="primary">
-          Learn More
+          {<a href={link}>Learn More</a>}
         </Button>
       </CardActions>
     </Card>
