@@ -44,7 +44,7 @@ const Introduction =() => {
                       <div className="slider-text-inner">
                         <div className="desc">
                          
-                          <p><a className="btn btn-primary btn-learn" href="https://dhruvbarochiya.me/" target="_blank" rel="noopener noreferrer">View Blog <i className="icon-book" /></a></p>
+                          <p><a className="btn btn-primary btn-learn" href="" target="_blank" rel="noopener noreferrer">View Blog <i className="icon-book" /></a></p>
                         </div>
                       </div>
                     </div>
