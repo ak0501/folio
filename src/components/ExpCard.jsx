@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -18,6 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
+
 export default function MediaCard({ image, title, para,link }) {
   const classes = useStyles();
 
@@ -29,7 +30,7 @@ export default function MediaCard({ image, title, para,link }) {
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
-          <Typography variant="body1 " color="textSecondary" component="p">
+          <Typography variant="body1 " color="textSecondary" component="h2" >
             {para}
           </Typography>
         </CardContent>
@@ -38,7 +39,7 @@ export default function MediaCard({ image, title, para,link }) {
         {/* <Button size="medium" color="primary">
           Share
         </Button> */}
-        <Button size="medium" color="primary">
+        <Button size="large" color="primary" >
           {<a href={link}>Learn More</a>}
         </Button>
       </CardActions>
