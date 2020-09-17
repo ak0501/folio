@@ -1,4 +1,5 @@
 import React from 'react';
+import Forecast from './forecast/Forecast';
 
 const Introduction =() => {
   return (
@@ -14,6 +15,7 @@ const Introduction =() => {
                       <div className="slider-text-inner js-fullheight">
                         <div className="desc">
                           <h1>Hi! <br />I'm Abinash</h1>
+                          <Forecast></Forecast>
                           <p><a className="btn btn-primary btn-learn" href="https://docs.google.com/document/d/1wu-tTyMNPF_LM6Cjyha18FZzCQJwOoar3MZtP_6rKCI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View CV<i className="icon-download4" /></a></p>
                         </div>
                       </div>
