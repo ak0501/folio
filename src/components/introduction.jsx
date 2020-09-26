@@ -15,11 +15,12 @@ const Introduction = () => {
                   <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                     <div className="slider-text-inner js-fullheight">
                       <div className="desc">
+                        <div></div>
                         <h1>
                           Hi! <br />
                           I'm Abinash
                         </h1>
-                        <Forecast></Forecast>
+
                         <p>
                           <a
                             className="btn btn-primary btn-learn"
@@ -48,7 +49,6 @@ const Introduction = () => {
                           I love building
                           <br /> THINGS !!
                         </h1>
-                        <DayTime></DayTime>
                         <p>
                           <a
                             className="btn btn-primary btn-learn"

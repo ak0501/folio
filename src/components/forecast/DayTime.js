@@ -1,4 +1,3 @@
-import React from "react";
 
 const DayTime = d => {
   let date = String(new window.Date());

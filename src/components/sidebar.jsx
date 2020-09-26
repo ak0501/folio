@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import DayTime from "./forecast/DayTime";
+import Forecast from "./forecast/Forecast";
+import LocalWeather from "./LocalWeather";
 
 export default class Sidebar extends Component {
   render() {
@@ -74,14 +77,12 @@ export default class Sidebar extends Component {
             <div className="colorlib-footer">
               <p>
                 <small>
-                  <a
-                    href="https://colorlib.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Colorlib
-                  </a>
+                  <DayTime></DayTime>
+                  {/* <Forecast></Forecast> */}
                 </small>
+                <div>
+                  <LocalWeather></LocalWeather>
+                </div>
               </p>
             </div>
           </aside>

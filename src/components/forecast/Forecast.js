@@ -11,7 +11,10 @@ const api = {
 
 const Forecast = () => {
   const [query, setQuery] = useState("");
+  const [error, setError] = useState("");
   const [weather, setWeather] = useState({});
+
+  /* -------------- get user location using navigator.geolocation ------------- */
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -25,20 +28,19 @@ const Forecast = () => {
     return date;
   };
 
-  const search = (e) => {
-    if (e.key === "Enter") {
-      fetch(
-        `api.openweathermap.org/data/2.5/weather?q=${query}&appid=${api.key}`
-      )
-        // fetch(`${api.url}weather?q=${query}&units=metric&appid=${api.key}`)
-        .then((res) => res.json())
-        .then((result) => {
-          setQuery("");
-          setWeather(result);
-        });
-    }
-  };
-
+  // const search = (e) => {
+  //   if (e.key === "Enter") {
+  //     fetch(
+  //       `api.openweathermap.org/data/2.5/weather?q=${query}&appid=${api.key}`
+  //     )
+  //       // fetch(`${api.url}weather?q=${query}&units=metric&appid=${api.key}`)
+  //       .then((res) => res.json())
+  //       .then((result) => {
+  //         setQuery("");
+  //         setWeather(result);
+  //       });
+  //   }
+  // };
 
   return (
     <div>
@@ -50,7 +52,7 @@ const Forecast = () => {
         <Button
           variant="primary"
           type="submit"
-          onClick={handleSubmit}
+          onClick={"none"}
           className="btn btn-success"
         >
           Submit
