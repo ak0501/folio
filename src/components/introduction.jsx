@@ -1,7 +1,4 @@
-import DayTime from "./forecast/DayTime";
-import Forecast from "./forecast/Forecast";
 import React from "react";
-
 const Introduction = () => {
   return (
     <div>
@@ -20,7 +17,6 @@ const Introduction = () => {
                           Hi! <br />
                           I'm Abinash
                         </h1>
-
                         <p>
                           <a
                             className="btn btn-primary btn-learn"
@@ -72,7 +68,6 @@ const Introduction = () => {
                     <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                       <div className="slider-text-inner">
                         <div className="desc">
-                         
                           <p><a className="btn btn-primary btn-learn" href="" target="_blank" rel="noopener noreferrer">View Blog <i className="icon-book" /></a></p>
                         </div>
                       </div>
@@ -86,5 +81,4 @@ const Introduction = () => {
     </div>
   );
 };
-
 export default Introduction;
