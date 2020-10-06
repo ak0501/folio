@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Clock from "react-clock";
 
-function Time() {
+function Time(props) {
   const [value, setValue] = useState(new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => setValue(new Date()), 1000);
+  let interval= setInterval(() => setValue(new Date()), 1000);
 
     return () => {
       clearInterval(interval);
@@ -15,7 +15,7 @@ function Time() {
   return (
     <div>
       <p>Current time:</p>
-      <Clock value={value} />
+      <Clock time={value}/>
     </div>
   );
 }

@@ -1,41 +1,41 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useEffect } from "react";
 require("dotenv").config();
-const api = {
-  key: process.env.REACT_APP_API_KEY,
-  url: process.env.REACT_APP_API_URL,
-};
+// const api = {
+//   key: f2d7a3ee16ff14d75f0702f3db41469b,
+//   url: process.env.REACT_APP_API_URL,
+// };
 
-const API_KEY = "abb1cf1535bd78a8e3431b6fa9b448eb";
-const API_URL = "http://api.openweathermap.org/data/2.5/weather";
-const LocalWeather = (props) => {
+const API_KEY = "";
+const API_URL = "https://api.openweathermap.org/data/2.5/weather";
+const LocalWeather = () => {
   const [lat, setLat] = useState("");
   const [lon, setLon] = useState("");
   const [city, setCity] = useState("");
   const [ico, setIco] = useState("");
   const [desc, setDesc] = useState("");
   const [temp, setTemp] = useState("");
-  let imgUrl = `http://openweathermap.org/img/wn/${ico}.png`;
+  let imgUrl = `https://openweathermap.org/img/wn/${ico}.png`;
 
   /* -------------------------- useeffect to call API ------------------------- */
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition((position) => {
+     navigator.geolocation.getCurrentPosition((position) => {
       // console.log(position);
       setLat(position.coords.latitude);
       setLon(position.coords.longitude);
-      const data = fetch(
-        `${API_URL}?lat=${lat}&lon=${lon}&unit=imperial&appid=${API_KEY}`
+      let values = fetch(
+        `${API_URL}?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
       )
-        .then((data) => data.json())
-        .then((data) => {
-          if (data.cod !== 200) {
+        .then((values) => values.json())
+        .then((values) => {
+          if (values.cod !== 200) {
             throw new Error();
           }
 
-          setCity(data.name);
-          setIco(data.weather[0].icon);
-          setDesc(data.weather[0].description);
-          setTemp(data.main.temp);
+          setCity(values.name);
+          setIco(values.weather[0].icon);
+          setDesc(values.weather[0].description);
+          setTemp(values.main.temp);
 
           // console.log(city);
           // console.log(ico);
@@ -48,22 +48,22 @@ const LocalWeather = (props) => {
           console.log(err.message);
         });
     });
-  }, []);
+  }, [lat, lon]);
 
-  useEffect(() => {}, []);
+  // useEffect(() => {}, []);
 
   return (
     <>
       <div>
         <p>
           {" "}
-          Location{""}
+          Location{" "}
           {city}
         </p>
         <a>
           <img src={imgUrl} alt="day" />
           <p></p>
-          {desc}
+          {desc}{" "}
           {`${temp}F`}
         </a>
       </div>

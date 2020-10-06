@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Time from "./Clock";
+import React from "react";
+
 import DayTime from "./forecast/DayTime";
 import LocalWeather from "./LocalWeather";
 
@@ -77,7 +77,7 @@ const Sidebar = () => {
             <p>
               {/* <small> */}
               <DayTime></DayTime>
-              <Time />
+             
 
               {/* <Forecast></Forecast> */}
               {/* </small> */}
