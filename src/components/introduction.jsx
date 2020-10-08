@@ -45,7 +45,7 @@ const Introduction = () => {
                           I love building
                           <br /> THINGS !!
                         </h1>
-                        <p>
+                        {/* <p>
                           <a
                             className="btn btn-primary btn-learn"
                             href="https://github.com/ak0501"
@@ -54,7 +54,7 @@ const Introduction = () => {
                           >
                             Website <i className="icon-website3" />
                           </a>
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>
