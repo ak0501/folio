@@ -20,7 +20,7 @@ const Introduction = () => {
                         <p>
                           <a
                             className="btn btn-primary btn-learn"
-                            href="https://docs.google.com/document/d/1wu-tTyMNPF_LM6Cjyha18FZzCQJwOoar3MZtP_6rKCI/edit?usp=sharing"
+                            href="https://docs.google.com/document/d/1q86TLzT7LumPp0ZrgFTv_wvsbQlNR_dYgKo6tdzqZSo/edit?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

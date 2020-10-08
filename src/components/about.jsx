@@ -2,11 +2,11 @@ import React from "react";
 import ExpCard from "./ExpCard";
 import Paragraph from "./Paragraph";
 import { Grid } from "@material-ui/core";
+import Projects from "./Projects";
 
 const About = () => {
   return (
     <div>
-      
       <section className="colorlib-about" data-section="about">
         <div className="colorlib-narrow-content">
           <div className="row">
@@ -28,9 +28,9 @@ const About = () => {
         </div>
       </section>
       {/* --------------------------------- section -------------------------------- */}
-      <section className="colorlib-about">
+       <section className="colorlib-about">
         <div className="colorlib-narrow-content">
-          <div className="row">
+         {/* <div className="row">
             <div
               className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
               data-animate-effect="fadeInLeft"
@@ -40,7 +40,7 @@ const About = () => {
             </div>
           </div>
           <>
-            <Grid container spacing={4} >
+            <Grid container spacing={4}>
               <Grid xs={12} md={6} lg={3}>
                 <ExpCard
                   title="lilOnes"
@@ -74,9 +74,11 @@ const About = () => {
                 />
               </Grid>
             </Grid>
-          </>
+          </>*/}
         </div>
-      </section>
+         <Projects/>
+      </section> 
+     
     </div>
   );
 };
