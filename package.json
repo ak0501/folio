@@ -23,7 +23,8 @@
     "react-icons-weather": "^1.0.5",
     "react-scripts": "^3.4.3",
     "react-swipeable-views": "^0.13.9",
-    "typeface-roboto": "0.0.75"
+    "typeface-roboto": "0.0.75",
+    "webpack": "^4.44.2"
   },
   "scripts": {
     "start": "react-scripts start",
