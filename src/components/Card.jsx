@@ -15,7 +15,6 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 10,
     paddingTop: "56.25%", // 16:9
-    marginTop:'30'
+    marginTop: "30",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -38,22 +37,23 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
+  typography: {
+    fontFamily: "Roboto",
+    fontSize: "6rem",
+  },
 }));
-
 export default function RecipeReviewCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
   return (
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            {props.avatar}
+          <Avatar variant="h3" aria-label="recipe" className={classes.avatar}>
+            <Typography variant="h4"> {props.avatar}</Typography>
           </Avatar>
         }
         action={
@@ -61,7 +61,7 @@ export default function RecipeReviewCard(props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title={props.title}
+        title={<Typography variant="h3"> {props.title} </Typography>}
         subheader={props.date}
       />
       <CardMedia
@@ -70,7 +70,12 @@ export default function RecipeReviewCard(props) {
         title={props.title}
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography
+          fontSize="12"
+          variant="h4"
+          color="textSecondary"
+          component="p"
+        >
           {props.description}
         </Typography>
       </CardContent>
@@ -94,12 +99,8 @@ export default function RecipeReviewCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
-          <Typography paragraph>
-           {props.paragraph}
-          </Typography>
-         
-          
+          <Typography></Typography>
+          <Typography variant="h5">{props.paragraph}</Typography>
         </CardContent>
       </Collapse>
     </Card>

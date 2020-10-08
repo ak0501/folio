@@ -2,7 +2,7 @@
 export const ProjectItems = [
          {
            Title: "LilOnes",
-           image: "/public/images/lilones.jpg",
+           image: "https://bit.ly/34BlPx7",
            route: "/",
            id: "lil",
            description: "Daycare Management App",
@@ -11,28 +11,28 @@ export const ProjectItems = [
          },
          {
            Title: "Weather",
-           image: "/public/images/lilones.jpg",
+           image: "https://bit.ly/3iHS5nw",
            route: "/",
            id: "Wea",
-           description: "Daycare Management App",
+           description: "Your Weather Forecast",
            paragraph:
              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula leo, pharetra eu faucibus at, sodales at erat. Suspendisse potenti. Donec malesuada neque vitae diam varius, nec auctor dui pellentesque. Etiam non justo quis enim finibus interdum. Vestibulum bibendum nulla et feugiat lobortis. Fusce pretium, nunc vel bibendum semper, leo justo gravida arcu, nec accumsan urna velit vitae nisi. Integer et sem sed sem euismod lacinia sed vitae metus.",
          },
          {
            Title: "ToDO",
-           image: "/public/images/lilones.jpg",
+           image: "https://bit.ly/2SDGifd",
            route: "/",
            id: "TD",
-           description: "Daycare Management App",
+           description: "Daily Task Reminder",
            paragraph:
              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula leo, pharetra eu faucibus at, sodales at erat. Suspendisse potenti. Donec malesuada neque vitae diam varius, nec auctor dui pellentesque. Etiam non justo quis enim finibus interdum. Vestibulum bibendum nulla et feugiat lobortis. Fusce pretium, nunc vel bibendum semper, leo justo gravida arcu, nec accumsan urna velit vitae nisi. Integer et sem sed sem euismod lacinia sed vitae metus.",
          },
          {
            Title: "CarbTracker",
-           image: "/public/images/lilones.jpg",
+           image: "https://bit.ly/2IaKUHQ",
            route: "/",
            id: "CT",
-           description: "Daycare Management App",
+           description: "Carb-Tracker",
            paragraph:
              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula leo, pharetra eu faucibus at, sodales at erat. Suspendisse potenti. Donec malesuada neque vitae diam varius, nec auctor dui pellentesque. Etiam non justo quis enim finibus interdum. Vestibulum bibendum nulla et feugiat lobortis. Fusce pretium, nunc vel bibendum semper, leo justo gravida arcu, nec accumsan urna velit vitae nisi. Integer et sem sed sem euismod lacinia sed vitae metus.",
          },
