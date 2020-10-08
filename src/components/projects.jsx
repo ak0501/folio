@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Tile from "./Tile";
+import Card from "./Card";
 import { ProjectItems } from "./ProjectItems";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const Projects = () => {
-
   return (
     <div>
       <Grid container className={useStyles.root} spacing={2}>
@@ -25,8 +24,14 @@ const Projects = () => {
           <Grid container justify="center" spacing={10}>
             {ProjectItems.map((item, index) => (
               <Grid key={index} item>
-                <Paper className={useStyles.paper}>
-                </Paper>
+                <Paper className={useStyles.paper} />
+                <Card key={index}
+                  title={item.Title}
+                  avatar={item.id}
+                  
+                  
+                
+                />
               </Grid>
             ))}
           </Grid>

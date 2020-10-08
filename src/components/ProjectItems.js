@@ -1,11 +1,28 @@
+
 export const ProjectItems = [
-  {
-    Tile: "LilOnes",
-    imgUrl: "/public/images/lilones.jpg",
-    route: "/",
-    id: "lil",
-  },
-  { Tile: "Weather" },
-  { Tile: "ToDO" },
-  { Tile: "CarbTracker" },
-];
+         {
+           Title: "LilOnes",
+           imgUrl: "/public/images/lilones.jpg",
+           route: "/",
+           id: "lil",
+           
+         },
+         {
+           Title: "Weather",
+           imgUrl: "/public/images/lilones.jpg",
+           route: "/",
+           id: "Wea",
+         },
+         {
+           Title: "ToDO",
+           imgUrl: "/public/images/lilones.jpg",
+           route: "/",
+           id: "TD",
+         },
+         {
+           Title: "CarbTracker",
+           imgUrl: "/public/images/lilones.jpg",
+           route: "/",
+           id: "CT",
+         },
+       ];
