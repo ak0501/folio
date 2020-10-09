@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useEffect } from "react";
-require("dotenv").config();
+// require("dotenv").config();
 // const api = {
 //   key: f2d7a3ee16ff14d75f0702f3db41469b,
 //   url: process.env.REACT_APP_API_URL,
