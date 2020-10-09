@@ -3,7 +3,7 @@ export const ProjectItems = [
          {
            Title: "LilOnes",
            image: "https://bit.ly/34BlPx7",
-           route: "/",
+           route: "https://github.com/ak0501/pequenoOnes",
            id: "lil",
            description: "Daycare Management App",
            paragraph:
@@ -12,7 +12,7 @@ export const ProjectItems = [
          {
            Title: "Weather",
            image: "https://bit.ly/3iHS5nw",
-           route: "/",
+           route: " https://ak0501.github.io/Weather-API",
            id: "Wea",
            description: "Your Weather Forecast",
            paragraph:
@@ -20,8 +20,8 @@ export const ProjectItems = [
          },
          {
            Title: "ToDO",
-           image: "https://bit.ly/2SDGifd",
-           route: "/",
+           image: "https://bit.ly/2FcfXBN",
+           route: "https://ak0501.github.io/To-Do-Planner/",
            id: "TD",
            description: "Daily Task Reminder",
            paragraph:
@@ -30,7 +30,7 @@ export const ProjectItems = [
          {
            Title: "CarbTracker",
            image: "https://bit.ly/2IaKUHQ",
-           route: "/",
+           route: "https://appcarbtracker.herokuapp.com/",
            id: "CT",
            description: "Carb-Tracker",
            paragraph:

@@ -21,6 +21,7 @@
     "react-google-font-loader": "^1.1.0",
     "react-icons": "^3.11.0",
     "react-icons-weather": "^1.0.5",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "react-swipeable-views": "^0.13.9",
     "typeface-roboto": "0.0.75",

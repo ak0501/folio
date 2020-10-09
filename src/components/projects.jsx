@@ -32,6 +32,7 @@ const Projects = () => {
                   title={item.Title}
                   avatar={item.id}
                   image={item.image}
+                  route={item.route}
                   description={item.description}
                   paragraph={item.paragraph}
                 />

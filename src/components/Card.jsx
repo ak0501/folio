@@ -15,6 +15,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { Button } from "@material-ui/core";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -37,10 +39,6 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
-  typography: {
-    fontFamily: "Roboto",
-    fontSize: "6rem",
-  },
 }));
 export default function RecipeReviewCard(props) {
   const classes = useStyles();
@@ -49,60 +47,65 @@ export default function RecipeReviewCard(props) {
     setExpanded(!expanded);
   };
   return (
-    <Card className={classes.root}>
-      <CardHeader
-        avatar={
-          <Avatar variant="h3" aria-label="recipe" className={classes.avatar}>
-            <Typography variant="h4"> {props.avatar}</Typography>
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title={<Typography variant="h3"> {props.title} </Typography>}
-        subheader={props.date}
-      />
-      <CardMedia
-        className={classes.media}
-        image={props.image}
-        title={props.title}
-      />
-      <CardContent>
-        <Typography
-          fontSize="12"
-          variant="h4"
-          color="textSecondary"
-          component="p"
-        >
-          {props.description}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+   
+    <Button Link href={props.route} target="#">
+      <Card className={classes.root}>
+        <CardHeader
+          avatar={
+            <Avatar variant="h3" aria-label="recipe" className={classes.avatar}>
+              <Typography variant="h4"> {props.avatar}</Typography>
+            </Avatar>
+          }
+          action={
+            <IconButton aria-label="settings">
+              <MoreVertIcon />
+            </IconButton>
+          }
+          title={<Typography variant="h3"> {props.title} </Typography>}
+          subheader={props.date}
+        />
+        <CardMedia
+          className={classes.media}
+          image={props.image}
+          title={props.title}
+        />
         <CardContent>
-          <Typography></Typography>
-          <Typography variant="h5">{props.paragraph}</Typography>
+          <Typography
+            fontSize="12"
+            variant="h4"
+            color="textSecondary"
+            component="p"
+          >
+            {props.description}
+          </Typography>
         </CardContent>
-      </Collapse>
-    </Card>
+        <CardActions disableSpacing>
+          <IconButton aria-label="add to favorites">
+            <FavoriteIcon />
+          </IconButton>
+          <IconButton aria-label="share">
+            <ShareIcon />
+          </IconButton>
+          <IconButton
+            className={clsx(classes.expand, {
+              [classes.expandOpen]: expanded,
+            })}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon />
+          </IconButton>
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography></Typography>
+            <Typography variant="h5">{props.paragraph}</Typography>
+          </CardContent>
+        </Collapse>
+      </Card>
+    </Button>
+
+    
   );
 }
