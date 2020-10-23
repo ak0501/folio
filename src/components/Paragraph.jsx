@@ -5,11 +5,9 @@ const Paragraph = () => {
   return (
     <>
       <p>
-       Originally from Nepal, came to the United States for heigher education. I recsived my degree in Manufacturing Engineering and have been working in 
-       <br/> the field of manufacturing for number of years. 
-        In the summer of 2020, due to COVID pandemic, my place of employement was affected heavily.
-        I went to  A junior full stack developer ready-set to add value
-        onboard your team!
+       <strong>O</strong>riginally from Nepal, came to the United States for heigher education. I received my degree in Manufacturing Engineering and have been working in the field of manufacturing for number of years. 
+        In the summer of 2020, I took the full advantage of COVID pandemic and joined the University of Minnesota Full-Stack Bootcamp to learn about web technologies.<br/>
+        I am actively seeking for employment opportunities a web developer and ready-set to add value onboard your team!
         
       </p>
     </>
